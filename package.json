@@ -23,7 +23,7 @@
     "check-sls-deployments": "node src/tools/checkServerlessDeployments/index.js",
     "check-mysql-status": "node src/tools/checkMySQLInstance/index.js",
     "switch-env-vars": "node src/tools/switchEnvVars/index.js",
-    "dev": "nodemon index.js",
+    "dev": "node --watch index.js",
     "start": "node ./index.js"
   },
   "author": "CyprusCodes",
