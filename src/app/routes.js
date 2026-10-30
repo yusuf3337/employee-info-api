@@ -71,4 +71,11 @@ router.post("/transfers", payrollAccess, postTransfer);
 router.put("/transfers/:id", payrollAccess, putTransfer);
 router.delete("/transfers/:id", payrollAccess, deleteTransfer);
 
+router.get("/deploy-test", (req, res) => {
+  res.status(200).json({
+    message: "Yeni kod canlıya başarıyla taşındı!",
+    version: "1.0.1"
+  });
+});
+
 module.exports = router;
